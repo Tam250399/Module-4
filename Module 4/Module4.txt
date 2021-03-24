@@ -1,0 +1,9 @@
+1:framework:
+2:DI Dependency Inversion
+3:Model
+4:DS 
+5:Spring MVC: hỗ trợ ORM  object relational mapping,hỗ trợ viết code test,
+
+BOOTRAPT:Grid
+	:Compoment
+SSR OR CSR :server side or client side
