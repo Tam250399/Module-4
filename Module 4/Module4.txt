@@ -7,3 +7,10 @@
 BOOTRAPT:Grid
 	:Compoment
 SSR OR CSR :server side or client side
+
+
+ viết tất cả vào controller có đk ko 
+ 
+tại sao phải viet service                                                                                                     
+
+tạo sao phải có repository
