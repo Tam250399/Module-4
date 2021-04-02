@@ -32,12 +32,11 @@ public class CustomerController {
 @GetMapping("/create-customer")
     public ModelAndView showCreateForm(){
         ModelAndView modelAndView = new ModelAndView("/customer/create");
-        Iterable<Provinces> provinces = provinceService.findAll();
-        modelAndView.addObject("provinces", provinces);
         modelAndView.addObject("customer", new Customer());
         return modelAndView;
-
     }
+
+
 @PostMapping("/create-customer")
     public ModelAndView saveCustomer(@ModelAttribute("customer") Customer customer){
 customerService.save(customer);
