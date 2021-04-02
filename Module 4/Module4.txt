@@ -8,6 +8,47 @@ BOOTRAPT:Grid
 	:Compoment
 SSR OR CSR :server side or client side
 
+Request Param:dùng để lấy giá trị ng dùng
+Path Variable: dùng lấy giá trị ng dùng trên trình duyệt
+viewResolver:dùng để xử lý tầng views của SpringMVC
+----------------------------------------
+ModelAndView:
+model như là một cầu nối dữ liệu giữa Controller và View.
+sự khác nhau model:
+Model là một interface trong khi đó ModelMap là một Class.
+Model là một interface nó chứa đựng 4 phương thức addAttribute và một phương thức merAttribute .
+ModelMap cài đặt lớp Map interface. Nên nó thêm các phương thức của Map.
+ModelAndView là sự kết hợp của 2 mục đích ModelMap and View . Nó cho phép controller trả về 1 giá trị bao gồm Model và View .
+-----------------------------------------
+thymeleaf là 1 bộ sử lý views
+thymeleaf cho phép sáu loại template: 
+Thymeleaf đánh dấu: HTML,XML
+Thymeleaf văn bản :TEXT,JAVASCRIPT,CSS
+Thymeleaf trống: RAW
+  • th:text được sử dụng để hiển thị text
+
+
+	FORM
+Thuộc tính quan trọng:commandname,modelAttribute
+
+
+				ORM(Object-Relational Mapping) framework hibernate , JPA(java persistence API)
+là kĩ thuật liên kết giữa các đối tượng lập trình vs CSDL
+
+chuyên môn hóa
+                                         JPA 
+JPA là 1 interface, mô tả mối quan hệ sd Java Platfom,cho phép ánh xạ các bảng CSDL
+ưu điểm:
+viết code ít,Performance tốt,độc lập database,làm việc vs SQL
+
+kiến trúc JPA Có 3 thành phân chính:Entity,Entity Manager,Entity Manager Factory
+
+					 Hibernate
+Hibernate là 1 ORM framework cho phép lập trình thao tác vs database thông qua các đối tượng 
+
+Hibernate vs JPA :
+JPA: là giao diện(interface) quy chuẩn,định nghĩa
+Hibernate:thực hiện cài đặt implement các giao diện đó,định nghĩa đó,hibernate triển khai interface 1 cách chi tiết
 
  viết tất cả vào controller có đk ko 
  
