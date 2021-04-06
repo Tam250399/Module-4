@@ -4,6 +4,7 @@ import Tam.model.Customer;
 import Tam.model.Provinces;
 import Tam.repository.ICustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
@@ -26,10 +27,13 @@ private ICustomerRepository customerRepository;
     }
 
     @Override
-    public void save(Customer customer) {
-        customerRepository.save(customer);
+    public Customer save(Customer customer) throws DuplicateEmailException {
+        try {
+            return customerRepository.save(customer);
+        } catch (DataIntegrityViolationException e) {
+            throw new DuplicateEmailException();
+        }
     }
-
 
 
     @Override
@@ -51,5 +55,8 @@ private ICustomerRepository customerRepository;
     public Page<Customer> findAllByFirstNameContaining(String firstname,Pageable pageable) {
         return customerRepository.findAllByFirstNameContaining(firstname, pageable);
     }
+
+
+
 
 }

@@ -2,6 +2,7 @@ package Tam.controller;
 
 import Tam.model.Customer;
 import Tam.model.Provinces;
+import Tam.service.DuplicateEmailException;
 import Tam.service.ICustomerService;
 import Tam.service.ProvinceService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,7 +39,7 @@ public class CustomerController {
 
 
 @PostMapping("/create-customer")
-    public ModelAndView saveCustomer(@ModelAttribute("customer") Customer customer){
+    public ModelAndView saveCustomer(@ModelAttribute("customer") Customer customer) throws DuplicateEmailException {
 customerService.save(customer);
 ModelAndView modelAndView = new ModelAndView("/customer/create");
 modelAndView.addObject("customer" , new Customer());
@@ -77,12 +78,17 @@ modelAndView.addObject("message", "New customer created successfully");
 
 
     @PostMapping("/edit-customer")
-    public ModelAndView updateCustomer(@ModelAttribute("customer") Customer customer) {
-        customerService.save(customer);
-        ModelAndView modelAndView = new ModelAndView("/customer/edit");
-        modelAndView.addObject("customer", customer);
-        modelAndView.addObject("message", "Customer updated successfully");
-        return modelAndView;
+    public ModelAndView updateCustomer(@ModelAttribute("customer") Customer customer) throws DuplicateEmailException {
+        try {
+            customerService.save(customer);
+            ModelAndView modelAndView = new ModelAndView("/customer/edit");
+            modelAndView.addObject("customer", customer);
+            modelAndView.addObject("message", "Customer updated successfully");
+            return modelAndView;
+        }catch (DuplicateEmailException e){
+            return new ModelAndView("customer/inputs-not-acceptable");
+        }
+
     }
 
     @GetMapping("/delete-customer/{id}")

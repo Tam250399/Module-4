@@ -21,5 +21,7 @@ public class Customer {
     @ManyToOne
     @JoinColumn(name ="province_id")
     private Provinces province;
+    @Column(unique = true)
+    private String email;
 
 }

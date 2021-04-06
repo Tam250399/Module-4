@@ -1,5 +1,7 @@
 package Tam.service;
 
+import Tam.model.Customer;
+
 import java.util.List;
 
 public interface IGeneralService<T> {
@@ -7,7 +9,7 @@ public interface IGeneralService<T> {
 
     T findById(Long id);
 
-    void save(T t);
+    Customer save(T t) throws DuplicateEmailException;
 
     void remove(Long id);
 

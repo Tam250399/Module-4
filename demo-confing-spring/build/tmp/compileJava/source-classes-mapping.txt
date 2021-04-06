@@ -1,0 +1,16 @@
+Model/Service/user/Iuser.java
+ Model.Service.user.Iuser
+controller/UserController.java
+ controller.UserController
+Model/Service/user/UserImpl.java
+ Model.Service.user.UserImpl
+Model/Service/product/product.java
+ Model.Service.product.product
+Model/Entities/User.java
+ Model.Entities.User
+AppConfig.java
+ AppConfig
+AppInit.java
+ AppInit
+controller/ProductController.java
+ controller.ProductController
