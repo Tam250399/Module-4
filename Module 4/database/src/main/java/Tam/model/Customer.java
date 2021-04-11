@@ -5,11 +5,12 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+
 @Entity
 @Getter
 @Setter
 @NoArgsConstructor
-@Table (name = "customers")
+@Table(name = "customers")
 public class Customer {
 
     @Id
@@ -19,9 +20,8 @@ public class Customer {
     private String lastName;
     private String address;
     @ManyToOne
-    @JoinColumn(name ="province_id")
+    @JoinColumn(name = "province_id")
     private Provinces province;
     @Column(unique = true)
     private String email;
-
 }

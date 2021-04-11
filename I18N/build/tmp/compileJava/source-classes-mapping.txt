@@ -1,0 +1,26 @@
+Tam/service/productService/IProductService.java
+ Tam.service.productService.IProductService
+Tam/controller/ProductController.java
+ Tam.controller.ProductController
+Tam/configuration/AppInit.java
+ Tam.configuration.AppInit
+Tam/service/IGeneralSevice.java
+ Tam.service.IGeneralSevice
+Tam/configuration/AppConfig.java
+ Tam.configuration.AppConfig
+Tam/repository/productRepository/IProductRepository.java
+ Tam.repository.productRepository.IProductRepository
+Tam/service/customerService/ICustomerService.java
+ Tam.service.customerService.ICustomerService
+Tam/service/productService/ProductService.java
+ Tam.service.productService.ProductService
+Tam/model/Customer.java
+ Tam.model.Customer
+Tam/model/Product.java
+ Tam.model.Product
+Tam/service/customerService/CustomerService.java
+ Tam.service.customerService.CustomerService
+Tam/repository/customerRepository/ICustomerRepository.java
+ Tam.repository.customerRepository.ICustomerRepository
+Tam/controller/CustomerController.java
+ Tam.controller.CustomerController

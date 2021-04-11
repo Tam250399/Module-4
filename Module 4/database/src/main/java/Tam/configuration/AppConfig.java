@@ -1,9 +1,6 @@
 package Tam.configuration;
 
 import Tam.formatter.ProvinceFormatter;
-import Tam.repository.ICustomerRepository;
-import Tam.service.CustomerService;
-import Tam.service.ICustomerService;
 import Tam.service.ProvinceService;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Qualifier;

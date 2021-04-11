@@ -28,9 +28,7 @@ public class ProvinceController {
         if(province == null){
             return new ModelAndView("/error.404");
         }
-
         Iterable<Customer> customers = customerService.findAllByProvince(province);
-
         ModelAndView modelAndView = new ModelAndView("/province/view");
         modelAndView.addObject("province", province);
         modelAndView.addObject("customers", customers);

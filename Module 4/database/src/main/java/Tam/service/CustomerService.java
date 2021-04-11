@@ -15,7 +15,6 @@ public class CustomerService implements ICustomerService{
 @Autowired
 private ICustomerRepository customerRepository;
 
-
     @Override
     public List<Customer> findAll() {
         return (List<Customer>) customerRepository.findAll();
@@ -55,8 +54,5 @@ private ICustomerRepository customerRepository;
     public Page<Customer> findAllByFirstNameContaining(String firstname,Pageable pageable) {
         return customerRepository.findAllByFirstNameContaining(firstname, pageable);
     }
-
-
-
 
 }

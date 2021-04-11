@@ -1,0 +1,16 @@
+Tam/controller/SmartphoneController.java
+ Tam.controller.SmartphoneController
+AppInit.java
+ AppInit
+Tam/service/SmartphoneService.java
+ Tam.service.SmartphoneService
+Tam/repository/SmartphoneRepository.java
+ Tam.repository.SmartphoneRepository
+Tam/service/SmartphoneServiceImpl.java
+ Tam.service.SmartphoneServiceImpl
+Tam/model/Smartphone.java
+ Tam.model.Smartphone
+AppConfig.java
+ AppConfig
+Tam/controller/HomeController.java
+ Tam.controller.HomeController

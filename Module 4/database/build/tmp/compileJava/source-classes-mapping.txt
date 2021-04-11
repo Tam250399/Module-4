@@ -6,25 +6,25 @@ Tam/repository/ICustomerRepository.java
  Tam.repository.ICustomerRepository
 Tam/formatter/ProvinceFormatter.java
  Tam.formatter.ProvinceFormatter
-Tam/configuration/AppInit.java
- Tam.configuration.AppInit
-Tam/configuration/AppConfig.java
- Tam.configuration.AppConfig
-Tam/model/Provinces.java
- Tam.model.Provinces
+Tam/service/DuplicateEmailException.java
+ Tam.service.DuplicateEmailException
 Tam/service/ProvinceService.java
  Tam.service.ProvinceService
+Tam/model/Provinces.java
+ Tam.model.Provinces
 Tam/model/Customer.java
  Tam.model.Customer
 Tam/controller/ProvinceController.java
  Tam.controller.ProvinceController
+Tam/configuration/AppInit.java
+ Tam.configuration.AppInit
 Tam/controller/CustomerController.java
  Tam.controller.CustomerController
-Tam/service/DuplicateEmailException.java
- Tam.service.DuplicateEmailException
 Tam/service/CustomerService.java
  Tam.service.CustomerService
 Tam/service/ICustomerService.java
  Tam.service.ICustomerService
 Tam/service/IGeneralService.java
  Tam.service.IGeneralService
+Tam/configuration/AppConfig.java
+ Tam.configuration.AppConfig
